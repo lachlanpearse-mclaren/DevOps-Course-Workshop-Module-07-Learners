@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('.NET Build') {
             environment {
                 DOTNET_CLI_HOME  = '/tmp/dotnet_cli_home'
             }   
