@@ -48,6 +48,20 @@ pipeline {
                         }
                     }  
                 }
+                stage('TypeScript Lint') {  
+                    steps {
+                        dir('DotnetTemplate.Web') {
+                            sh 'npm run lint'
+                        }
+                    }  
+                }
+                stage('TypeScript Test') {  
+                    steps {
+                        dir('DotnetTemplate.Web') {
+                            sh 'npm t'
+                        }
+                    }  
+                }
             }
         } 
     }
