@@ -13,6 +13,10 @@ jobs:
     - name: Test .NET code
       run: dotnet test
 
+    - name: Install NPM
+      working-directory: ./DotnetTemplate.Web
+      run: npm install 
+
     - name: Build TypeScript code
       working-directory: ./DotnetTemplate.Web
       run: npm run build
