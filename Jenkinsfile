@@ -38,7 +38,7 @@ pipeline {
             }
             steps {
                 dir('DotnetTemplate.Web') {
-                    sh 'npm run build'
+                    sh 'pwd'
                 }
                 
             }
