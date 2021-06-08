@@ -12,7 +12,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'dotnet build'
+                ps -ef
             }
         }
     }
