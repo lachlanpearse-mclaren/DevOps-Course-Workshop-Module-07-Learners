@@ -37,6 +37,7 @@ pipeline {
                 }
             }
             steps {
+                sh 'cd DotnetTemplate.Web'
                 sh 'npm run build'
             }
         }
