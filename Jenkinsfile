@@ -12,7 +12,7 @@ pipeline {
                 }
             }
             steps {
-                ps -ef
+                sh 'ls'
             }
         }
     }
