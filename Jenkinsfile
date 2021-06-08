@@ -12,7 +12,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'ls'
+                sh 'dotnet build'
             }
         }
     }
